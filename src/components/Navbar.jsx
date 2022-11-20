@@ -14,33 +14,57 @@ const Navbar = () => {
 
   window.addEventListener("scroll", changeColor);
   return (
-    <nav className={color ? "navbar navbar-expand-lg fixed-top navbar-dark nav-bg" : "navbar navbar-expand-lg fixed-top navbar-dark"}>
+    <nav
+      className={
+        color
+          ? "navbar navbar-expand-lg fixed-top navbar-dark nav-bg"
+          : "navbar navbar-expand-lg fixed-top navbar-dark"
+      }
+    >
       <div className="container">
         <Link className="navbar-brand fw-bold color-success fs-4" to={"/"}>
           Menthy.
         </Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 text-center align-items-center">
             <li className="nav-item">
-              <Link className="nav-link active mx-1 fw-semibold" aria-current="page" to={"/"}>
+              <Link
+                className="nav-link active mx-1 fw-semibold"
+                aria-current="page"
+                to={"/"}
+              >
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active mx-1 fw-semibold" to={"/article"}>
+              <Link
+                className="nav-link active mx-1 fw-semibold"
+                to={"/article"}
+              >
                 Article
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link  btn  mx-1  fw-semibold" to={"/login"}>
+              <Link className="nav-link  btn  mx-1  fw-semibold" to={"/Login"}>
                 Login
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link btn btn-success  mx-1  fw-semibold text-white" to={"/signup"}>
+              <Link
+                className="nav-link btn btn-success  mx-1  fw-semibold text-white"
+                to={"/registrasi"}
+              >
                 Sign Up
               </Link>
             </li>
